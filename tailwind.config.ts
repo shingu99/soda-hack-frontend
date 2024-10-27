@@ -11,7 +11,8 @@ const config: Config = {
   	extend: {
 		fontFamily: {
 			rockSalt: ["var(--font-rock-salt)"],
-			ubuntu: ["var(--font-ubuntu)"]
+			ubuntu: ["var(--font-ubuntu)"],
+			orbitron: ["var(--font-orbitron)"]
 		},
   		colors: {
   			background: 'hsl(var(--background))',
