@@ -124,7 +124,7 @@ export default function Profile() {
 
         <Separator className="col-span-6 border-2 border-double border-black -mt-16" />
         <div className="col-span-6 -mt-44 grid grid-cols-6 gap-x-2 gap-y-0.5">
-          <div className="col-span-6 -mt-8 flex justify-center items-center py-4 ">
+          <div className="col-span-6 sm:-mt-8 flex justify-center items-center py-4 ">
             <h1 className="text-2xl font-bold text-black">POSTS</h1>
           </div>
 

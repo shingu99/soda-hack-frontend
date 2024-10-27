@@ -2,7 +2,7 @@ import Navbar from "@/components/home-components/navbar";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Rock_Salt, Ubuntu } from 'next/font/google';
+import { Rock_Salt, Ubuntu, Orbitron } from 'next/font/google';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,6 +20,12 @@ const rockSalt = Rock_Salt({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-rock-salt',
+});
+
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-orbitron',
 });
 
 const ubuntu = Ubuntu({
@@ -41,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ubuntu.variable} ${rockSalt.variable} antialiased`}
+        className={`${orbitron.variable} ${ubuntu.variable} ${rockSalt.variable} antialiased`}
       >
           <Navbar/>
           {children}
