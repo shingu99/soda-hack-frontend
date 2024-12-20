@@ -7,18 +7,6 @@ export default function Contact() {
       name: "Raghav Shankar",
       email: "raghavshankar99@gmail.com",
     },
-    {
-      name: "Ninad Nale",
-      email: "ninadnale@gmail.com",
-    },
-    {
-      name: "Viraj Sonaje",
-      email: "viraj.sonaje@gmail.com",
-    },
-    {
-      name: "Shikha Verma",
-      email: "svermau@gmail.com",
-    },
   ];
   return (
     <div className="flex justify-center h-screen items-center font-ubuntu mb-2">
@@ -29,7 +17,7 @@ export default function Contact() {
             className="col-span-6 flex flex-col items-center md:flex-row md:gap-6 p-4 border-2 border-blue-500 shadow-md rounded-lg"
           >
             <Label className="md:w-1/2 text-blue-700 text-xl font-medium">
-              {(item.name).toUpperCase()}
+              {item.name.toUpperCase()}
             </Label>
             <p className="md:w-1/2 text-gray-500 text-xl">
               <a href={`mailto:${item.email}`}>{item.email}</a>

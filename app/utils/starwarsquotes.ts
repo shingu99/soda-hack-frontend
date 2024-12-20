@@ -30,4 +30,3 @@ export const starWarsQuotes = [
     "I will not let this Republic that has stood for a thousand years be split in two. My negotiations will not fail.",
     "Chewie, we’re home."
   ];
-  

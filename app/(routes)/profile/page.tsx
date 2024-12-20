@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { PlusIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
-import { sendImage } from "../utils/sendImage";
+import { sendImage } from "../../utils/sendImage";
 
 export default function Profile() {
   const [file, setFile] = useState<File | null>(null);
@@ -116,7 +116,7 @@ export default function Profile() {
           <Button
             onClick={handleUpload}
             className="mt-2 transition ease-in-out hover:scale-105 hover:translate-y-0.8 duration-150"
-            disabled = {!file}
+            disabled={!file}
           >
             Upload
           </Button>
